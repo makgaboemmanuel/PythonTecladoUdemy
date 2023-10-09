@@ -31,7 +31,7 @@ if __name__ == '__main__':
     print('Float value after division: ', RADIANS_DEGREES)
     print('Float value after division: ', 10 / 5)
     print('Integer value after division: ', 10 // 5)
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
     # remainder in Python - uses the modulus % operator
     modulus_example = 6 % 5
@@ -69,23 +69,57 @@ if __name__ == '__main__':
     # dealing with user input
 
     print("Please provide your name")
+    none = "I forgot my name"
     my_name = input()
-    print(f"Your name is {my_name}")
+    exact_name = my_name or none # this is an example of truthy values
+    print(f"Your name is {exact_name}")
     # important:
     # int * int = int
     # float * int = float
     # string * int = string will be printed the number of int times
-    print(f"You are {6*'d'} months old")
+    print(f"You are {6 * 'd'} months old")
     # converting: input always returns a string data type, you have to explictly convert it to any other format
     print("Please provide your salary")
     salary = int(input())
-    print(f"Your salary is {salary}") # .format(salary)
+    print(f"Your salary is {salary}")  # .format(salary)
 
     # comparison statements in Python:
-    print(f"Using comparison statements: 5 > 3: ", ( 5 > 3))
+    print(f"Using comparison statements: 5 > 3: ", (5 > 3))
     # == compares the equality of two values
-    print(f"Using comparison statements: 5 == 3: ", ( 5 == 3))
+    print(f"Using comparison statements: 5 == 3: ", (5 == 3))
 
     # dealing with and as well as or
     results = salary < 65 and len(my_name) > 10
     print("Using and as wel as or:", results)
+    # bool function in Python, checks if a value is true or not. return true as long as the value is not empty
+    print(bool("Makgabo"))
+    print(bool(""))  # False because the value being checked is empty
+    print(bool(0))  # False because the value being checked is 0
+
+    """
+    Therefore, whenever we refer to an “array,” we mean a “NumPy array.” Lists are another data structure, similar to NumPy arrays, but unlike NumPy arrays, 
+    lists are a part of core Python. Lists have a variety of uses. They are useful, for example, in various bookkeeping tasks that arise in computer programming.
+    """
+
+    fruits = ["Pear", "Orangle", "Apple", "Guava"]
+    print("Iterating fruits list. Size of the list: ", len(fruits))
+    for fruit in fruits:
+        print(fruit)
+
+    # accessing a specific element of the list
+    print("Acessing last element of the list: ", fruits[ len(fruits) -1])
+    # dealing with 2-dimensional lists
+    people_ages = [
+        ["Makgabo", 33],
+        ["Emmanuel", 40],
+        ["Frank", 66],
+        ["Paul", 51],
+        ["Alex", 68],
+    ]
+    print("Accessing 2-dimensional lists values", people_ages[0][1])
+    for a in people_ages:
+        c = ""
+        for b in a:
+            c = c + " " + str(b)
+        print(c)
+
