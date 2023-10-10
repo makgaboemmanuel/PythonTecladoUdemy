@@ -101,7 +101,7 @@ if __name__ == '__main__':
     lists are a part of core Python. Lists have a variety of uses. They are useful, for example, in various bookkeeping tasks that arise in computer programming.
     """
 
-    fruits = ["Pear", "Orangle", "Apple", "Guava"]
+    fruits = ["Pear", "Orange", "Apple", "Guava"]
     print("Iterating fruits list. Size of the list: ", len(fruits))
     for fruit in fruits:
         print(fruit)
@@ -122,4 +122,41 @@ if __name__ == '__main__':
         for b in a:
             c = c + " " + str(b)
         print(c)
+
+    # using a for loop a counter variables
+    print("# using a for loop a counter variables")
+    for i in range(len(fruits)):
+        print( fruits[i])
+
+    fruits.remove("Orange")
+    print(fruits)
+
+    print("# Dealing with Tuples")
+    ex_tuple = "Volkwagen", "Jeep", "Peugeot"
+    print(len( ex_tuple ))
+    print("# Appending values to a Tuples")
+    ex_tuple = ex_tuple + ("Hyundai, Ford",)
+    for ex_tp in ex_tuple:
+        print(ex_tp)
+
+    print("# Dealing with Sets - doesn't allow duplicates")
+    art_friends = { "Thomas", "Erling", "Pearl", "Caiphus"} # "Thomas",
+    sci_friends = {"Jen", "Charlie", "Chuck", "Owen", "Billy", "Caiphus", "Thomas"}
+    print(art_friends)
+    art_friends.add("Pearl") # adding a new element to the set
+    print(art_friends)
+    # art_friends.remove("Thomas") # removing an element from the set
+    print(art_friends)
+    #
+
+    print("Default Values: 'art_friends' ",art_friends)
+    print("Default Values:  'sci_friends' ",sci_friends)
+    print("Non-Common Friends")
+    print(sci_friends.difference(art_friends)) # finds the elements that are in sci_friends but not in art_friends
+    print(art_friends.difference(sci_friends))  # finds the elements that are in art_friends but not in sci_friends
+
+    # symmetric differences: symmetric_differences
+    print("Symmetric Differences: ",art_friends.symmetric_difference(sci_friends))
+    print("Common Elements", art_friends.intersection(sci_friends))
+
 
