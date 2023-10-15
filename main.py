@@ -160,3 +160,84 @@ if __name__ == '__main__':
     print("Common Elements", art_friends.intersection(sci_friends))
 
 
+    # appending strings
+    name = "Makgabo Emmanuel"
+    surname = "Mathekga"
+    full_name = name + " " + surname
+    print(full_name)
+    # formatting strings
+    age = 28
+    print(f"You are {age} years old")
+    # different ways of declaring strings that can change at anytime
+    my_details = "My full names are: {}"
+    personal_details = my_details.format(full_name) # this is where you replace the value
+    print(personal_details)
+    # this value here won't change, it is more static instead of dynamic
+    # exercise: Lesson: this is based on sets
+    nearby_people = { "Rolf", "Jen", "Anna"}
+    user_set = set()
+    for i in range(3):
+        print("Please provide a name")
+        new_name = input()
+        user_set.add(new_name)
+
+    print("Values of the set")
+    print(user_set)
+
+    # print("Common Elements", art_friends.intersection(sci_friends))
+    print("Common elements using intersection method", nearby_people.intersection(user_set))
+
+    # video 21: python dictionaries
+    friend_ages = {
+        "Rolf": 24,
+        "Adam": 30,
+        "Anne": 28
+    }
+
+    print("# video 21: python dictionaries")
+    # disctionaries do keep the order of adding items
+
+    # adding a element or updating an existing element to a dictionary
+
+    friend_ages["James"] = 52
+    friend_ages["Adam"] = 33
+    print("")
+    print( friend_ages )
+
+    """  friends = {
+        { "name": "Rolf", "age": 24},
+        { "name": "Fred", "age": 41},
+        { "name": "Shamus", "age": 38},
+        { "name": "Kirk", "age":56},
+        { "name": "Max", "age": 29},
+        { "name": "Shane", "age": 40},
+        { "name": "Franklin", "age":40},
+        { "name": "Simon", "age": 30},
+        { "name": "Lupita", "age": 55}
+    } """
+
+    """ for i in friend_ages:
+        for k in len(i):
+            print(k) """
+
+my_friends = {
+    'Jose': {'last_seen': 6},
+    'Rolf': {'surname': 'Smith'},
+    'Anne': 6
+}
+print( my_friends['Jose'] )
+print( my_friends['Jose']['last_seen'] )
+
+print("Seeing Values Safe")
+players = [
+    {
+        'name': 'Rolf',
+        'numbers': (13, 22, 3, 6, 9)
+    },
+    {
+        'name': 'John',
+        'numbers': (22, 3, 5, 7, 9)
+    }
+]
+print(players[0]['numbers'])
+print(players[0]['numbers'][0])
