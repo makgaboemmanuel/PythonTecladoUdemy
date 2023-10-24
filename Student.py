@@ -10,6 +10,11 @@ class Student:
     def average_marks(self):
         return sum(self.marks) // len(self.marks)
 
+    # using decorators: this is through the annotation: @property - the only argument accepted is 'self'
+    @property
+    def average_mmarks(self):
+        return sum(self.marks) // len(self.marks)
+
 # example on inheritance
 class Working_Student(Student):
     def __init__(self, name, school, salary):
@@ -30,3 +35,9 @@ rolf.marks.append(71)
 rolf.marks.append(70)
 
 print(rolf.marks, "Get marks of Working_Student")
+aastudent = Student("Olek", "Wandiya High School")
+aastudent.marks.append(65)
+aastudent.marks.append(85)
+aastudent.marks.append(71)
+aastudent.marks.append(70)
+print(aastudent.average_mmarks, "Get average marks of through the property annotation")
