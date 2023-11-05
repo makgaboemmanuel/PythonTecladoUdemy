@@ -19,8 +19,10 @@ for str in file_content:
 print(f'Number f correct answers is: {total}')
 file_write = open("results.txt", "w")
 # writing content to a file
-for line in result_tostore:
-    file_write.write(line + "\n")
+#for line in result_tostore:
+    # file_write.write(line + "\n")
 # file_write.write(result_tostore)
+print(f"Your final score is: { total / len(file_content)}")
+file_write.write(f"Your final score is: { total / len(file_content)}")
 file_write.close()
 read_file.close()
