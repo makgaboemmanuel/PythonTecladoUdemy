@@ -42,3 +42,30 @@ my_file.close()
 print("example of substring python ")
 string = "freeCodeCamp"
 print(string[0:5])
+
+# creating sample csv values
+create_csv = ':'.join(['Makgabo','38','Tshwane University of Technology','Software Development'])
+print('CSV Data Sample')
+print( create_csv)
+
+
+
+"""
+Hey!
+
+Reading and writing CSV files can be as simple as shown in the last couple lectures.
+
+However, there can also be some problems. For example, if the data you're trying to save contains a comma (,) inside it, you could run into some trouble.
+
+In addition, there are some performance improvements we can make, as well as make the code a little bit simpler.
+
+We can do all that by using the built-in csv module. Nothing to install, just a couple lines of code that make everything better.
+
+I've recorded a YouTube video explaining how the module works. It's not directly tied to this course's content, but I'm sure you won't have a problem understand everything I talk about in the video.
+
+Check it out: https://www.youtube.com/watch?v=W7QByFjVom8
+
+Happy coding!
+
+Jose
+"""
