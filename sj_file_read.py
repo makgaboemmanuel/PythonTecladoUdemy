@@ -32,3 +32,27 @@ file_write = open("cars_json.txt", "w")
 json.dump(cars, file_write)
 file_write.close()
 
+# please learn the difference between loads and dumps
+
+# this section below here opens and closes a file automatically for you
+# no need to use explicit open and close
+data_dic = {}
+# this below is called context manager
+with open("json_file.txt","r") as file:
+    data_dic = json.load(file)
+
+print("Data Dictionary")
+print(data_dic)
+
+
+
+
+
+
+
+
+
+
+
+
+
