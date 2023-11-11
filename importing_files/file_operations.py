@@ -1,7 +1,10 @@
 # first method
 # writing to a file
 def save_to_file(content, filename):
-    with open(filename, "w") as file:
+    # there are two / 2 modes of writing to a file,
+    # w - means over-writing the existing content
+    # a - means appending to the existing content
+    with open(filename, "a") as file:
         file.write(content)
 
 # second method

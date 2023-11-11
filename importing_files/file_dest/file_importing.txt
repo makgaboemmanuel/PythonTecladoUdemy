@@ -1,0 +1,26 @@
+Hey, welcome to some further reading!
+
+Please use the following links for reading on files importing:
+
+- https://www.pythonforbeginners.com/cheatsheet/python-file-handling
+- https://docs.python.org/3/library/json.html : this json encoder and decoder library
+- https://github.com/tecladocode/complete-python-course/tree/master/course_contents/6_files : working with files on GitHub
+
+
+There's always more to learn, so I wanted to give you a few resources in case you want to dive deeper into the topic of files in
+Python.
+
+Here's a few great or interesting resources:
+
+File Handling Cheat Sheet in Python, a quick cheat sheet for those (frequent) times we forget particular file modes or operations!
+
+
+Python - Relative imports for the billionth time, another StackOverflow question on relative imports... Do you feel like you could
+help this person out now?
+
+19.2. json — JSON encoder and decoder — Python 3.6.4 documentation, the official Python documentation is a great place.
+I recommend you read through it when you have doubts about JSON or any other Python topic!
+
+Kind regards,
+
+Jose
