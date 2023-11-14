@@ -24,3 +24,7 @@ another_starts_b = ( c for c in cars if c.startswith('B') )
 print( list(another_starts_b) )
 print( list(start_with_m) )
 
+print(" the 'map' function")
+cars_lower = map(lambda c:c.lower(), cars ) # this also returns an iterable
+print(list(cars_lower))
+
